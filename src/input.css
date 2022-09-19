@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("http://fonts.cdnfonts.com/css/gotham-black?styles=15539");
+@import url("http://fonts.cdnfonts.com/css/tw-cen-mt-std?styles=48942,48941,48935");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+body {
+  height: 1000rem;
+  overflow-x: hidden;
+}
+
+.gotham-bold {
+  font-family: "Gotham Black", sans-serif;
+  font-weight: bold;
+}
+
+.tw-bold {
+  font-family: "Tw Cen MT Std", sans-serif;
+  font-weight: bold;
+}
+
+.tw-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  @apply max-w-7xl w-full mx-auto md:px-8 px-6;
+}
+
+.wilayah-pengurusan img {
+  @apply h-[150px];
+}
+
+/* Owl Carousel Button Navigation */
+.prev {
+  @apply absolute xl:left-[-4.5rem] md:left-[40%] left-[30%] xl:top-[0%] top-[11rem] bottom-[-2rem]  w-[64px];
+}
+
+.next {
+  @apply absolute xl:right-[-4.5rem] md:right-[40%] right-[30%] xl:top-[0%] top-[11rem]  bottom-[-2rem]  w-[64px];
+}
+
+.next-video {
+  @apply absolute xl:right-[-4.5rem] md:right-[40%] right-[30%] xl:top-[20%] top-[11rem]  bottom-[-2rem]  w-[64px];
+}
+
+.prev-video {
+  @apply absolute xl:left-[-4.5rem] md:left-[40%] left-[30%] xl:top-[0%] top-[11rem] bottom-[-2rem]  w-[64px];
+}

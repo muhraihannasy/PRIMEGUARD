@@ -16,6 +16,9 @@ module.exports = {
         "linear-yellow":
           "linear-gradient(100deg, #FECA0A 40.94%, rgba(255, 90, 1, 0) 100.1%);",
       },
+      screens: {
+        tablets: { max: "1092px" },
+      },
     },
   },
   plugins: [],

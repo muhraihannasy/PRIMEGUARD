@@ -14,32 +14,38 @@
   </head>
   <body>
     <header
-      class="header relative z-20 bg-cover h-[820px] bg-no-repeat bg-center before:absolute before:z-[-1] before:w-[100%] before:h-full before:left-0 before:top-0 before:bg-linear-yellow pt-[20px]"
+      class="header relative z-20 bg-cover h-[820px] tablets:h-[520px] bg-no-repeat bg-center before:absolute before:z-[-1] before:w-[100%] before:h-full before:left-0 before:top-0 before:bg-linear-yellow pt-[20px]"
       style="
         background: url('./images/beranda/bg-beranda.png') center no-repeat;
         background-size: cover;
       "
     >
-      <!-- <img
-        src="./images/bg-linear.svg"
-        alt=""
-        class="absolute left-0 h-full z-[-1] w-[20rem]"
-      /> -->
-
       <nav class="container flex items-center justify-between gap-7">
         <div class="flex items-center gap-6">
           <a class="nav-logo">
             <img
               src="./images/logo-1.png"
               alt="Logo Primeguard"
-              class="w-[70px]"
+              class="w-[70px] tablets:w-[3rem]"
             />
           </a>
-          <ul class="nav-group flex items-center gap-6 text-white">
+          <ul
+            class="nav-group flex tablets:flex-col tablets:bg-black items-center gap-6 tablets:absolute tablets:left-0 tablets:pb-10 pt-[1.5rem] tablets:w-full tablets:h-full text-white"
+          >
+            <div
+              class="flex items-center justify-between w-full px-8 absolute invisible tablets:relative tablets:visible"
+            >
+              <img src="./images/loho-2.png" alt="" class="w-[153.79px]" />
+              <img
+                src="./images/Icon/ic-close.png"
+                alt=""
+                class="w-[19px] cursor-pointer btn-close-nav"
+              />
+            </div>
             <li>
               <a
                 href=""
-                class="bg-white rounded-lg px-5 py-2 text-c2 text-textc1"
+                class="bg-white tablets:bg-transparent tablets:text-white rounded-lg px-5 py-2 text-c2 text-textc1"
                 >Beranda</a
               >
             </li>
@@ -65,7 +71,7 @@
           </ul>
         </div>
 
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-4 tablets:hidden">
           <img
             src="./images/Icon/icn-idn.svg"
             alt="Indonesia"
@@ -77,22 +83,30 @@
             class="w-[74.18px]"
           />
         </div>
+
+        <img
+          src="./images/Icon/ic-menu.svg"
+          alt=""
+          class="cursor-pointer hidden tablets:block w-[18px] translate-x-[-2rem] z-[1] btn-open-nav"
+        />
       </nav>
 
-      <div class="container mt-[113px]">
+      <div
+        class="container mt-[113px] tablets:mt-[30px] flex flex-col tablets:items-center"
+      >
         <h1
-          class="gotham-bold md:text-[80px] text-[40px] md:w-[530px] leading-[1]"
+          class="gotham-bold md:text-[80px] text-[40px] w-[250px] md:w-[530px] leading-[1] tablets:text-center"
         >
           PRIMGUARD INDONESIA
         </h1>
-        <p class="tw-regular md:w-[730px] mt-[30px]">
+        <p class="tw-regular md:w-[730px] mt-[30px] tablets:text-center">
           Adalah perusahaan yang bergerak dibidang pelayanan jasa pengurusan
           surat-surat kendaraan STNK, BPKB dan pengurusan SIM serta produk
           perawatan dan perlengkapan kendaraan anda
         </p>
 
         <h2
-          class="mt-[86px] text-white gotham-bold mdtext-[50px] text-[30px] md:w-[680px] leading-[1]"
+          class="mt-[86px] tablets:mt-[1.5rem] text-white gotham-bold mdtext-[50px] text-[30px] md:w-[680px] leading-[1] tablets:text-center"
         >
           Solusi Pelayanan Aman dan Terpercaya
         </h2>
@@ -109,7 +123,9 @@
             Wilayah Pengurusan Kami
           </h2>
 
-          <div class="owl-carousel wilayah-pengurusan xl:w-[1100px] mx-auto">
+          <div
+            class="owl-carousel wilayah-pengurusan xl:w-[1100px] mx-auto tablets:translate-x-[20]"
+          >
             <div class="text-center text-white">
               <img
                 src="./images/Logo Daerah/Logo Depok.svg"
@@ -175,6 +191,7 @@
           </div>
         </div>
       </section>
+
       <section class="section-2 bg-primary">
         <div class="container flex flex-col items-center">
           <div
@@ -359,39 +376,203 @@
       </section>
 
       <section
-        class="bg-primary lg:h-[615px] md:h-[436px] h-[360px] flex items-end justify-end"
+        class="bg-primary lg:h-[615px] md:h-[436px] sm:h-[380px] h-[240px] flex items-end justify-end"
       >
         <div class="container relative">
           <img src="./images/beranda/ils-cabang.png" alt="" />
-          <div
-            class="flex items-center gap-10 absolute xl:-top-[20%] lg:-top-[3rem] -top-[8rem] lg:left-[10%] left-[20%] xl:w-max md:w-[29rem]"
-          >
+
+          <img
+            src="./images/beranda/kalimalang.png"
+            alt=""
+            class="absolute lg:-top-[5rem] lg:w-[204px] md:-top-[5rem] sm:-top-[4rem] md:w-[10rem] sm:w-[8rem] w-[5rem] -top-[3rem]"
+          />
+          <img
+            src="./images/beranda/klender.png"
+            alt=""
+            class="absolute lg:w-[224px] lg:-top-[10rem] md:-top-[5rem] lg:left-[21rem] md:left-[18rem] sm:left-[12rem] left-[7rem] sm:-top-[4rem] md:w-[10rem] sm:w-[8rem] -top-[2rem] w-[5rem]"
+          />
+          <img
+            src="./images/beranda/harapanindah.png"
+            alt=""
+            class="absolute lg:w-[302px] lg:-top-[10rem] md:-top-[5rem] left-[55%] sm:-top-[4rem] md:w-[10rem] sm:w-[8rem] w-[5rem] -top-[2rem]"
+          />
+          <img
+            src="./images/beranda/harapanbaru.png"
+            alt=""
+            class="absolute lg:w-[242px] left-[76%] lg:-top-[2rem] md:-top-[5rem] sm:-top-[4rem] md:w-[10rem] sm:w-[8rem] w-[5rem] -top-[2rem]"
+          />
+        </div>
+      </section>
+
+      <section
+        class="py-[5rem]"
+        style="background: url('./images/bg-body1.png')"
+      >
+        <div class="container flex items-center justify-center">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div
+              class="card bg-white rounded-xl flex flex-col items-center justify-center h-[433px] w-[290px] transition-colors hover:bg-primary"
+            >
+              <img src="./images/Icon/icon-anterken.svg" alt="" />
+              <h2 class="text-[28px] tw-regular">Anterken</h2>
+            </div>
+            <div
+              class="card bg-white rounded-xl flex flex-col items-center justify-center h-[433px] w-[290px] transition-colors hover:bg-primary"
+            >
+              <img src="./images/Icon/icon-Layanan-Jasa.svg" alt="" />
+              <h2 class="text-[28px] tw-regular">Layanan Jasa</h2>
+            </div>
+            <div
+              class="card bg-white rounded-xl flex flex-col items-center justify-center h-[433px] w-[290px] transition-colors hover:bg-primary"
+            >
+              <img src="./images/Icon/icon-produk.svg" alt="" />
+              <h2 class="text-[28px] tw-regular">Produk</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="flex items-center justify-center mt-[80px] gap-6">
+            <div class="flex items-center gap-3">
+              <img src="./images/Icon/icn-str.svg" alt="" />
+              <img src="./images/Icon/icn-str.svg" alt="" />
+              <img src="./images/Icon/icn-str.svg" alt="" />
+            </div>
+            <h2 class="text-center tw-bold text-[20px]">Klien Kami</h2>
+            <div class="flex items-center gap-3">
+              <img src="./images/Icon/icn-str.svg" alt="" />
+              <img src="./images/Icon/icn-str.svg" alt="" />
+              <img src="./images/Icon/icn-str.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="owl-carousel klien mt-[4rem]">
             <img
-              src="./images/beranda/kalimalang.png"
-              alt=""
-              class="xl:w-[12rem] -translate-y-[1rem] lg:-translate-x-[3rem] flex-1 w-full"
+              src="./images/Logo Client/Group 37.svg"
+              alt="Gambar Klient 1"
             />
             <img
-              src="./images/beranda/klender.png"
-              alt=""
-              class="-translate-y-[5rem] xl:w-[12rem] flex-1 w-full"
+              src="./images/Logo Client/Group 38.svg"
+              alt="Gambar Klient 1"
             />
             <img
-              src="./images/beranda/harapanindah.png"
-              alt=""
-              class="-translate-y-[5rem] lg:translate-x-[8rem] xl:w-[15rem] flex-1 w-full"
+              src="./images/Logo Client/Group 39.svg"
+              alt="Gambar Klient 1"
             />
             <img
-              src="./images/beranda/harapanbaru.png"
-              alt=""
-              class="translate-y-[2rem] lg:translate-x-[7rem] xl:w-[12rem] flex-1 w-full"
+              src="./images/Logo Client/Group 40.svg"
+              alt="Gambar Klient 1"
+            />
+            <img
+              src="./images/Logo Client/Group 41.svg"
+              alt="Gambar Klient 1"
+            />
+            <img
+              src="./images/Logo Client/Group 42.svg"
+              alt="Gambar Klient 1"
+            />
+            <img
+              src="./images/Logo Client/Group 43.svg"
+              alt="Gambar Klient 1"
+            />
+            <img
+              src="./images/Logo Client/Group 45.svg"
+              alt="Gambar Klient 1"
+            />
+            <img
+              src="./images/Logo Client/Group 46.svg"
+              alt="Gambar Klient 1"
+            />
+            <img
+              src="./images/Logo Client/Group 47.svg"
+              alt="Gambar Klient 1"
+            />
+            <img
+              src="./images/Logo Client/Group 48.svg"
+              alt="Gambar Klient 1"
+            />
+            <img
+              src="./images/Logo Client/Group 91.svg"
+              alt="Gambar Klient 1"
             />
           </div>
         </div>
       </section>
     </main>
 
-    <footer></footer>
+    <footer
+      style="background: url('./images/bg-body1.png')"
+      class="pt-[3rem] pb-[2rem] mt-[100px]"
+    >
+      <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-2 text-white">
+          <div>
+            <h2 class="tw-bold text-[30px]">Tentang Kami</h2>
+            <p class="tw-regular text-[16px] sm:w-[493px] mt-[20px] mb-[60px]">
+              Adalah perusahaan yang bergerak dibidang pelayanan jasa pengurusan
+              surat-surat kendaraan STNK, BPKB dan pengurusan SIM serta produk
+              perawatan dan perlengkapan kendaraan anda
+            </p>
+
+            <div class="flex items-center gap-5">
+              <a href="">
+                <img
+                  src="./images/Icon/logo-instagram.svg"
+                  alt=""
+                  class="w-[43px]"
+                />
+              </a>
+              <a href=""
+                ><img
+                  src="./images/Icon/logo-shopee.svg"
+                  alt=""
+                  class="w-[43px]"
+              /></a>
+              <a href="">
+                <img
+                  src="./images/Icon/logo-tiktok.svg"
+                  alt=""
+                  class="w-[43px]"
+              /></a>
+              <a href="">
+                <img
+                  src="./images/Icon/logo-whatsapp.svg"
+                  alt=""
+                  class="w-[43px]"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="./images/Icon/logo-facebook.svg"
+                  alt=""
+                  class="w-[43px]"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="lg:mt-0 mt-[40px]">
+            <h2 class="tw-bold text-[30px] mb-[2rem]">CONTACT US</h2>
+            <div class="flex items-center gap-4 mb-[1.5rem]">
+              <img src="./images/Icon/icn-maps.svg" alt="" class="w-[32px]" />
+              <p>
+                Jl. Boulevard Hijau Blok C2, No. 3 Pejuang, Medan Satria, Bekasi
+                (Harapan Indah) (Ofce Center)
+              </p>
+            </div>
+            <div class="flex items-center gap-4 mb-[1.5rem]">
+              <img src="./images/Icon/icn-wa.svg" alt="" class="w-[32px]" />
+              <p>0813-1000-5055</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <img src="./images/Icon/icn-mail.svg" alt="" class="w-[32px]" />
+              <p>primguardindonesia.autocare@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- jquery -->
     <script src="./js/jquery.js"></script>

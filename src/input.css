@@ -33,6 +33,18 @@ body {
   @apply h-[150px];
 }
 
+/* Navbar  */
+
+.nav-group {
+  @apply transition-all tablets:top-[-100rem];
+}
+
+.nav-group.active {
+  @apply tablets:top-0 tablets:z-[99];
+}
+
+/* Navbar  */
+
 /* Owl Carousel Button Navigation */
 .prev {
   @apply absolute xl:left-[-4.5rem] md:left-[40%] left-[30%] xl:top-[0%] top-[11rem] bottom-[-2rem]  w-[64px];
@@ -43,9 +55,9 @@ body {
 }
 
 .next-video {
-  @apply absolute xl:right-[-4.5rem] md:right-[40%] right-[30%] xl:top-[20%] top-[11rem]  bottom-[-2rem]  w-[64px];
+  @apply absolute xl:right-[-4.5rem] right-[6%] xl:top-[38%] top-[12rem]  w-[64px];
 }
 
 .prev-video {
-  @apply absolute xl:left-[-4.5rem] md:left-[40%] left-[30%] xl:top-[0%] top-[11rem] bottom-[-2rem]  w-[64px];
+  @apply absolute xl:left-[-4.5rem]  left-[6%] xl:top-[38%] top-[11.5rem] w-[64px];
 }
